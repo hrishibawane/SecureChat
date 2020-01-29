@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:paddingEnd="15dp"
+    android:paddingStart="60dp"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_message"
+        android:layout_alignParentEnd="true"
+        android:elevation="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_message_body"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:layout_alignParentStart="true"
+            android:text="Placeholder message" />
+
+        <TextView
+            android:id="@+id/my_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:textSize="12sp"
+            android:layout_below="@+id/my_message_body"
+            android:layout_alignStart="@+id/my_message_body"/>
+
+        <ImageView
+            android:id="@+id/my_message_status"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/my_message_time"
+            android:layout_alignStart="@+id/my_message_time"
+            android:paddingStart="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
